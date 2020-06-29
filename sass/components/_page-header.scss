@@ -1,10 +1,10 @@
 .list.site-nav {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 }
 
 .site-nav .link {
-  display: block;
+  // display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -74,7 +74,7 @@
 /* auth-nav */
 
 .auth-nav .item {
-  display: block;
+  // display: block;
   margin-right: 30px;
 }
 .auth-nav .item:last-child {
@@ -82,8 +82,8 @@
 }
 
 .auth-nav {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -91,8 +91,8 @@
   letter-spacing: 0.02em;
 }
 .auth-nav .link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
 
   fill: $primaryTextColor;
   color: $primaryTextColor;
