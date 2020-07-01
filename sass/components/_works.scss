@@ -3,9 +3,11 @@
 }
 
 .applications {
-  display: inline-block;
+  display: block;
   position: absolute;
   bottom: 0;
+  right: 0;
+  margin: 0;
 
   width: 100%;
   padding-top: 25px;
