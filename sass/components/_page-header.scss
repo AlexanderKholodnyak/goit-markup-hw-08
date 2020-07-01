@@ -5,8 +5,8 @@
 
 .site-nav .link {
   // display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   color: $titleTextColor;
 
@@ -97,8 +97,8 @@
   fill: $primaryTextColor;
   color: $primaryTextColor;
   margin-left: 10px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
