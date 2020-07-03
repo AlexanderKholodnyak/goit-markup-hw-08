@@ -1,3 +1,6 @@
+.container.kindwork {
+  display: none;
+}
 .works img {
   display: block;
 }
@@ -37,4 +40,5 @@
 main section:nth-child(4) {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: $backgroundGreyColor;
 }
