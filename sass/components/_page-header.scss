@@ -56,6 +56,7 @@
   background-color: $accentColor;
 }
 .site-nav .link.current {
+  position: relative;
   color: $accentColor;
   padding-bottom: 8px;
 }
@@ -219,7 +220,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 61px;
+    // width: 61px;
     height: 4px;
     border-radius: 2px;
 

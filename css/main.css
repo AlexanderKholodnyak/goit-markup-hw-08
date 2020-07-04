@@ -377,6 +377,7 @@ img {
 }
 
 .site-nav .link.current {
+  position: relative;
   color: #2196f3;
   padding-bottom: 8px;
 }
@@ -538,7 +539,6 @@ img {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    width: 61px;
     height: 4px;
     border-radius: 2px;
     background-color: #2196f3;
@@ -1272,9 +1272,15 @@ p.kind-work {
 
 /* проекты */
 main.main-portfolio {
-  margin-top: 95px;
+  margin-top: 60px;
   margin-bottom: 95px;
   padding: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  main.main-portfolio {
+    margin-top: 95px;
+  }
 }
 
 .projects .project-item:nth-last-child(-n + 3) {
@@ -1926,15 +1932,42 @@ footer > p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .list.button-filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-filter li:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  .list.button-filter {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-filter li:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  .list.button-filter {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .social-nets {

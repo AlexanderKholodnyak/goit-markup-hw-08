@@ -78,9 +78,30 @@
 /* кнопки выбора фильтрв */
 .list.button-filter {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: left;
 
-  margin-bottom: 50px;
+  // margin-bottom: 50px;
+  @media screen and(max-width:767px) {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: left;
+  }
+}
+@media screen and(max-width:767px) {
+  .button-filter li:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  .list.button-filter {
+    margin-bottom: 40px;
+  }
+}
+@media screen and(min-width:768px) {
+  .button-filter li:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+  .list.button-filter {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
 }
