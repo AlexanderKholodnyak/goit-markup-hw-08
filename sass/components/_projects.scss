@@ -1,7 +1,7 @@
 .project-item {
   margin-bottom: 30px;
 
-  width: 370px;
+  // min-width: 100%;
 
   overflow: hidden;
   &:focus,
@@ -12,6 +12,15 @@
   &:hover .project__background,
   &:focus .project__background {
     transform: translateY(-100%);
+  }
+  @media screen and(min-width:480px) and(max-width:767px) {
+    width: 450px;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 370px;
   }
 }
 .project__image {
@@ -59,6 +68,7 @@
   border-left: 1px solid#EEEEEE;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: left;
 }
 
 .project-title {
@@ -78,6 +88,8 @@
 }
 .project-item img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 p.kind-work {
@@ -90,10 +102,12 @@ p.kind-work {
 }
 /* проекты */
 .projects {
-  // display: flex;
-  // flex-wrap: wrap;
-  // align-items: stretch;
-  // justify-content: space-between;
+  @media screen and(min-width:767px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
 }
 main.main-portfolio {
   margin-top: 60px;
