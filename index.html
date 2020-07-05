@@ -162,11 +162,20 @@
 
         <ul class="list works">
           <li>
-            <img src="./images/computer.jpg" alt="Computer" width="370" />
+            <img
+              srcset="./images/computer.jpg 1x, ./images/computer@2x.jpg 2x"
+              src="./images/computer.jpg"
+              alt="Computer"
+              width="370"
+            />
             <h3 class="applications">Десктопные приложения</h3>
           </li>
           <li>
             <img
+              srcset="
+                ./images/blue-smartphone.jpg    1x,
+                ./images/blue-smartphone@2x.jpg 2x
+              "
               src="./images/blue-smartphone.jpg"
               alt="Smartphone"
               width="370"
@@ -174,22 +183,40 @@
             <h3 class="applications">Мобильные приложения</h3>
           </li>
           <li>
-            <img src="./images/black-screen.jpg" alt="Monitor" width="370" />
+            <img
+              srcset="
+                ./images/black-screen.jpg    1x,
+                ./images/black-screen@2x.jpg 2x
+              "
+              src="./images/black-screen.jpg"
+              alt="Monitor"
+              width="370"
+            />
             <h3 class="applications">Дизайнерские решения</h3>
           </li>
         </ul>
       </section>
 
       <!-- Наша команда -->
+
       <section class="container">
         <h2 class="title big team">Наша команда</h2>
         <ul class="list our-team">
           <li class="employer">
-            <img
-              src="./images/smith.jpg"
-              alt="фото сотрудника"
-              min-width="270"
-            />
+            <picture
+              ><source
+                srcset="./images/smith-450.jpg 1x, ./images/smith-450@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source
+                srcset="./images/smith-354.jpg 1x, ./images/smith-354@2x.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source
+                srcset="./images/smith-270.jpg 1x, ./images/smith-270@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+
+              <img src="./images/smith-270.jpg" alt="фото сотрудника"
+            /></picture>
+
             <h3 class="title teamate">Николай Кучеренко</h3>
             <p class="profession">Product Designer</p>
             <ul class="list social-nets">
@@ -240,7 +267,28 @@
             </ul>
           </li>
           <li class="employer">
-            <img src="./images/stewart.jpg" alt="фото сотрудника" width="270" />
+            <picture>
+              <source
+                srcset="
+                  ./images/stewart-450.jpg    1x,
+                  ./images/stewart-450@2x.jpg 2x
+                "
+                media="(max-width: 767px)" />
+              <source
+                srcset="
+                  ./images/stewart-354.jpg    1x,
+                  ./images/stewart-354@2x.jpg 2x
+                "
+                media="(max-width: 1199px)" />
+              <source
+                srcset="
+                  ./images/stewart-270.jpg    1x,
+                  ./images/stewart-270@2x.jpg 2x
+                "
+                media="(min-width: 1200px)" />
+
+              <img src="./images/stewart-270.jpg" alt="фото сотрудника"
+            /></picture>
             <h3 class="title teamate">Ольга Иванова</h3>
             <p class="profession">Frontend Developer</p>
             <ul class="list social-nets">
@@ -291,7 +339,19 @@
             </ul>
           </li>
           <li class="employer">
-            <img src="./images/jakis.jpg" alt="фото сотрудника" width="270" />
+            <picture>
+              <source
+                srcset="./images/jakis-450.jpg 1x, ./images/jakis-450@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source
+                srcset="./images/jakis-354.jpg 1x, ./images/jakis-354@2x.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source
+                srcset="./images/jakis-270.jpg 1x, ./images/jakis-270@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+
+              <img src="./images/jakis-270.jpg" alt="фото сотрудника"
+            /></picture>
             <h3 class="title teamate">Андрей Шевченко</h3>
             <p class="profession">Marketing</p>
             <ul class="list social-nets">
@@ -342,7 +402,19 @@
             </ul>
           </li>
           <li class="employer">
-            <img src="./images/doe.jpg" alt="фото сотрудника" width="270" />
+            <picture>
+              <source
+                srcset="./images/doe-450.jpg 1x, ./images/doe-450@2x.jpg 2x"
+                media="(max-width: 767px)" />
+              <source
+                srcset="./images/doe-354.jpg 1x, ./images/doe-354@2x.jpg 2x"
+                media="(max-width: 1199px)" />
+              <source
+                srcset="./images/doe-270.jpg 1x, ./images/doe-270@2x.jpg 2x"
+                media="(min-width: 1200px)" />
+
+              <img src="./images/doe-270.jpg" alt="фото сотрудника"
+            /></picture>
             <h3 class="title teamate">Иван Николаев</h3>
             <p class="profession">UI Designer</p>
             <ul class="list social-nets">

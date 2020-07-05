@@ -285,6 +285,9 @@ a {
 
 img {
   margin: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -295,7 +298,6 @@ img {
 }
 
 .container {
-  outline: 1px solid tomato;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -716,6 +718,24 @@ img {
   background-size: cover;
 }
 
+@media screen and (min-width: 767px) and (max-width: 1199) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-img.jpg");
+    background-size: cover;
+    max-width: 1199px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../images/header-img.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../images/header-img.jpg");
+    background-size: 100%;
+    height: auto;
+  }
+}
+
 .hero > div {
   margin-left: auto;
   margin-right: auto;
@@ -732,6 +752,12 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-size: 26px;
+  }
 }
 
 .hero-button.primary {
@@ -890,12 +916,6 @@ main section:nth-child(3) {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 767px) {
-  .employer {
-    max-width: 450px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .employer {
     width: 354px;
@@ -916,13 +936,10 @@ main section:nth-child(3) {
 }
 
 .employer > img {
+  display: block;
   margin-bottom: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .employer > img {
-    width: 450px;
-  }
+  max-width: 100px;
+  height: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1279,7 +1296,7 @@ main section:nth-child(4) {
 .project-item img {
   display: block;
   max-width: 100%;
-  height: auto;
+  height: 294px;
 }
 
 p.kind-work {
@@ -1319,8 +1336,22 @@ main.main-portfolio {
   }
 }
 
-.projects .project-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .projects .project-item:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects .project-item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projects .project-item:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 footer {

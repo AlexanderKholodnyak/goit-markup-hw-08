@@ -21,9 +21,9 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  @media screen and(max-width:767px) {
-    max-width: 450px;
-  }
+  // @media screen and(max-width:767px) {
+  //   max-width: 450px;
+  // }
   @media screen and(min-width:768px) and(max-width:1199px) {
     width: 354px;
     &:nth-child(2n + 1) {
@@ -39,11 +39,20 @@
 }
 
 .employer > img {
+  display: block;
   margin-bottom: 30px;
-  @media screen and(max-width:767px) {
-    width: 450px;
-  }
+  max-width: 100px;
+  height: auto;
+
+  // @media screen and(max-width:480px) {
+  //   max-width: 100%;
+  //   height: auto;
+  // }
+  // @media screen and(max-width:767px) {
+  //   width: 450px;
+  // }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .employer > img {
     width: 354px;
